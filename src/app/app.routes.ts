@@ -3,12 +3,12 @@ import { Routes } from '@angular/router';
 export const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'orders',
+    redirectTo: 'dashboard',
     pathMatch: 'full',
   },
   {
-    path: 'orders',
+    path: 'dashboard',
     loadChildren: () =>
-      import('./orders/orders.module').then((m) => m.OrdersModule),
+      import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
   },
 ];
